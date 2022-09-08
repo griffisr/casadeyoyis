@@ -1,5 +1,9 @@
+#landing-footer a {
+    color: white !important
+
+}
 #nav-bar{
-    background-color: #fef029;
+    background-color: #ffffff;
     border: none;
 }
 
