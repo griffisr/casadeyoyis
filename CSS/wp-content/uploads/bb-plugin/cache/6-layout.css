@@ -952,8 +952,8 @@ img.mfp-img {
 }
 
 .fl-node-58b5549543da3 > .fl-row-content-wrap {
-  background-color: #B8BAAE;
-  background-image: url("https://riley-griffis.s3.us-east-2.amazonaws.com/assets/testercover.jpg");
+  background-color: #fdfff6;
+  background-image: url("");
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -1013,6 +1013,8 @@ img.mfp-img {
 .fl-node-58b5549543da3 > .fl-row-content-wrap {
   padding-top: 45px;
 }
+
+/*Testimonial and Contact Background Color*/
 .fl-node-58b554954414a > .fl-row-content-wrap {
   background-color: #6869611f;
   border-top-width: 1px;
@@ -1021,7 +1023,7 @@ img.mfp-img {
   border-left-width: 0px;
 }
 .fl-node-58b554954414a > .fl-row-content-wrap {
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 .fl-node-59250bcd95b8c > .fl-row-content-wrap {
   border-top-width: 1px;
@@ -1244,7 +1246,7 @@ img.mfp-img {
 
 
 .fl-node-58b55495441bd {
-  width: 69.42%;
+
 } 
 
 

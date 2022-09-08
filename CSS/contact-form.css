@@ -1,0 +1,105 @@
+#nav-bar{
+    background-color: #fef029;
+    border: none;
+}
+
+
+#nav-logo-small{
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+#menu-maintop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sticky-logo{
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+#contact-form input{
+    padding-bottom: 2.3vh;
+    margin-bottom: 1.15vh;
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+
+#field_t1zhai {
+    padding-top: 1.6vh;
+    padding-bottom: 1.6vh;
+    margin-bottom: 1.15vh;
+    font-size: 1em;
+    padding-left: 5px;
+}
+
+#contact-form textarea {
+    padding-bottom: 5.5em;
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+
+#submit-btn {
+    width: 100%;
+    padding-bottom: .8em;
+    padding-top: .8em;
+    background-color: #fef029;
+    color: black;
+}
+
+
+
+/* Screens smaller than 768px W */
+@media only screen and (max-width: 768px) {
+
+    #nav-logo-center{
+        display: none;
+    }
+  }
+
+/* Screens larger than 768px W */
+@media only screen and (min-width: 768px) {
+
+    #nav-logo-small{
+        display: none;
+    }
+  }
+  
+
+/* TABLETS */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+
+  }
+
+
+
+  
+/* Screens larger than 992px W */
+@media only screen and (min-width: 992px) {
+    #nav-bar-toggle, #nav-bar-toggle-list {
+        width: 100%;
+    }
+    #menu-maintop-1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+
+  }
+
+  

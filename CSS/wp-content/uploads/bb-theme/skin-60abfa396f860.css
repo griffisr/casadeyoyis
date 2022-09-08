@@ -2493,7 +2493,7 @@ body.fl-framework-bootstrap-4 nav a.no-menu {
 }
 .fl-page-nav-right.fl-page-header-fixed .fl-logo-img,
 .fl-page-header-fixed .fl-logo-img {
-  max-height: 46px !important;
+  max-height: 80px !important;
   width: auto !important;
 }
 .fl-page-nav-right.fl-page-header-fixed .fl-logo-text,

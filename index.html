@@ -53,6 +53,20 @@
 <script src='JS/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  
+
+  <link rel='stylesheet' type="text/css" href='CSS/photo-strip-cards.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/photo-gallery.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/testimonials.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/contact-form.css' media='all' />
+
    <!--Initialize Firebase-->
    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
@@ -160,39 +174,35 @@ CSS Migrated from BB theme:
 
 <!------------------------------Start Content--------------------------------------------------->
 <div class="fl-page">
-<!------------------------------Small Nav Bar--------------------------------------------------->
+<!------------------------------Scrolled/Sticky Nav Bar--------------------------------------------------->
 <header class="fl-page-header fl-page-header-fixed fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile"  role="banner">
 	<div class="fl-page-header-wrap">
 		<div class="fl-page-header-container container">
 			<div class="fl-page-header-row row">
 
-        <!--Header logo for scrolled nav bar-->
-				<div class="col-sm-12 col-md-3 fl-page-logo-wrap">
-					<div class="fl-page-header-logo">
-						<a href=""><img loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogoDark.png"  data-retina="Images/Logos/sbpLogo.png" title="" alt= "Photo Booth Near Me" /></a>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-md-9 fl-page-fixed-nav-wrap">
+				<div class="col-sm-12 fl-page-fixed-nav-wrap">
 					<div class="fl-page-nav-wrap">
 
 						<nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" role="navigation">
 
-							<button src="https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogo.png"type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
-                
-								<span><i class="fa fa-bars" aria-hidden="true"></i><span class="sr-only"><img src="https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogo.png" alt= "Photo Booth Near Me"></img></span></span>
-							</button>
-
-							<div class="fl-page-nav-collapse collapse navbar-collapse">
-								<ul id="menu-maintop" class="nav navbar-nav navbar-right menu fl-theme-menu">
+							<div class="fl-page-nav-collapse collapse navbar-collapse" style="width: 100%;">
+								<ul id="menu-maintop" class="nav navbar-nav menu fl-theme-menu" >
                   
                   <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link" title="Rental Guide">Rental Guide</a></li>
 
-
                  <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="testimonials.html" class="nav-link" title="Testimonials">Testimonials</a></li>
-                  <!--Dropdown-->
-                  <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title="FAQs">FAQs</a></li>
-                  <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title="Request Quote">Request Quote</a></li>
+
+                 <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item">     
+
+
+                  <a href=""><img id="sticky-logo" loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="Images/casadeyoyislogo.png"  data-retina="Images/casadeyoyislogo.png" title="" alt= "casadeyoyis" /></a>
+
+                 </li>
+
+                 <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title="FAQs">FAQs</a></li>
+
+                 <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title="Request Quote">Request Quote</a></li>
+
                 </ul>							
               </div>
 						</nav>
@@ -226,42 +236,57 @@ CSS Migrated from BB theme:
 
 
 
- <!------------------------------Large Nav Bar--------------------------------------------------->
+ <!------------------------------Nav Bar--------------------------------------------------->
 <header class="fl-page-header fl-page-header-primary fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile" itemscope="itemscope" itemtype="https://schema.org/WPHeader"  role="banner">
-	<div class="fl-page-header-wrap">
+	<div class="fl-page-header-wrap" id="nav-bar">
 		<div class="fl-page-header-container container" style="padding-top: 0%;">
 			<div class="fl-page-header-row row">
- 
-				<div class="col-sm-12 col-md-4 fl-page-header-logo-col">
-					<div class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-						<a href="http://snapboothphotos.com/" itemprop="url"><img  src="https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogo.png" title=" " alt= "Photo Booth Near Me" style="width: 70%;"/></a>	
-          </div>
-				</div>
 
-				<div class="col-sm-12 col-md-8 fl-page-nav-col" style="padding-top: 20px;">
+        <!--Small Logo for mobile nav menu-->
+        <div id="nav-logo-small" class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+          <a href="" itemprop="url"><img src="Images/casadeyoyislogo.png" title=" "
+              alt="Photo Booth Near Me" /></a>
+        </div>
+
+
+
+
+				<div class="col-sm-12 col-md-8 fl-page-nav-col" id="nav-bar-toggle-list">
 					<div class="fl-page-nav-wrap">
-						<nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+						<nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" id="nav-bar">
 
 							<button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
-                
                 <!--CHANGE THE HAMBURGER MENU ICON-->
-								<span><span class="sr-only" style="position: relative;"><img src="Images/menu.png" style="height: 55px; width: auto;" alt= "Photo Booth Near Me"></img></span>
+								<span><span class="sr-only" style="position: relative;"><img src="Images/menu.png" style="height: 75px; width: auto;" alt= "Photo Booth Near Me"></img></span>
 							</button>
 
-							<div class="fl-page-nav-collapse collapse navbar-collapse">
+							<div class="fl-page-nav-collapse collapse navbar-collapse" id="nav-bar-toggle">
 								<ul id="menu-maintop-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
-                  
-                  
+
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link" title ="Rental Guide">Rental Guide</a></li>
+
                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="testimonials.html" class="nav-link" title="Testimonials">Testimonials</a></li>
-                            <!--Dropdown-->
-                            <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title="FAQs">FAQs</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title="Request Quote">Request Quote</a></li>
+
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item" id="nav-logo-center">
+                                <a href="" itemprop="url" class="nav-link"><img  src="Images/casadeyoyislogo.png" title=" " alt= "" style="width: 200px;"/></a>	
+                          </li>
+
+                          <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title="FAQs">FAQs</a></li>
+
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title="Request Quote">Request Quote</a></li>
+
                           </ul>							
               </div>
+
 						</nav>
+
 					</div>
 				</div>
+
+
+
+
 			</div>
 		</div>
 	</div>
@@ -277,123 +302,94 @@ CSS Migrated from BB theme:
 			  <div class="fl-post-content clearfix" itemprop="text">
 		      <div class="fl-builder-content fl-builder-content-6 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="6">
 
-            <!--light blue bar above nave bar below locked cta bar-->
-            <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-58b5549543da3 fl-row-full-height fl-row-align-top fl-row-overlap-top" data-node="58b5549543da3">
-	            <div class="fl-row-content-wrap">
-		            <div class="uabb-row-separator uabb-top-row-separator" > </div>
-                <div class="fl-row-content fl-row-fixed-width fl-node-content">
-                  <div class="fl-col-group fl-node-58b59f1f3fa57 fl-col-group-equal-height fl-col-group-align-center" data-node="58b59f1f3fa57">
-                    <div class="fl-col fl-node-58b59f1f402b3 fl-col-has-cols" data-node="58b59f1f402b3">
-                      <div class="fl-col-content fl-node-content">
 
 
-<!-------------------------------------------------------Start----------------------------------------------------------------------------------------------------------------------01.1-->                     
-                        <div class="fl-col-group fl-node-592525fbed4c5 fl-col-group-nested" data-node="592525fbed4c5">
-                          <div class="fl-col fl-node-592525fbed6fc fl-visible-desktop-medium" data-node="592525fbed6fc">
-                            <div class="fl-col-content fl-node-content">
-                              <div class="fl-module fl-module-rich-text fl-node-592527f6a9ca9 fl-visible-desktop-medium" data-node="592527f6a9ca9">
-                                <div class="fl-module-content fl-node-content">
-                                  <div class="fl-rich-text">  
-
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-<!-------------------------------------------------------End--------------------------------------------------------------------------------------------------------------------01.1-->
-
- 
-
-<!-------------------------------------------------------Start--------------------------------------------------------------------------------------------------------------------01.2-->
-                      <div class="fl-col-group fl-node-590842fbe3554 fl-col-group-nested" data-node="590842fbe3554">
-
-                        <!--Left Side on top-->
-		                	  <div class="fl-col fl-node-590842fbe391a fl-col-small" data-node="590842fbe391a">
-	                        <div class="fl-col-content fl-node-content">
-
-                            
-
-                          </div>
-                        </div>
 
 
-                        <!--Right side on top-->
-                            <div class="fl-col fl-node-590842fbe3955 fl-col-small" data-node="590842fbe3955">
-                              <div class="fl-col-content fl-node-content">
 
 
-                                <!-------------------START----------------------1.2.1-->
-	                          <div class="fl-module fl-module-rich-text fl-node-58dabc53d4df8" data-node="58dabc53d4df8">
-	                            <div class="fl-module-content fl-node-content">
-		                            <div class="fl-rich-text">
-	                                <h1 title="Photo Booth Near Me">Lorem Ipsum: Lorem Ipsum Lorem</h1>
-                                  <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                                </div>
-	                            </div>
-                            </div>
-                            <!-------------------END----------------------1.2.1-->
+            
+              <!------------------------------------------------------------------------------------------------->
+              <!------------------------------------------------------------------------------------------------->
+              <!------------------------------------------------------------------------------------------------->
+              <!----------------------------------------START--------------------------------------------------->
+              <!------------------------------------------------------------------------------------------------->
+              <!------------------------------------------------------------------------------------------------->
+
+<!-----------------------------------------------------------------------------------------------------INTRO IMAGE SLIDER----------------------------------------------------------------------------------------------------->
+
+              <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58e9c078da856 gallery-background" data-node="58e9c078da856">
+                     
+                <div class="fl-row-content-wrap" id="gallery-4x6" style="background-color: #fff;">
 
 
-                            <div class="fl-module fl-module-pp-dual-button fl-node-58e97f2eb9860" data-node="58e97f2eb9860">
-                              <div class="fl-module-content fl-node-content">
-                                <div class="pp-dual-button-content clearfix">
-                                  <div class="pp-dual-button-inner">
-
-
-                                    <!-------------------START----------------------1.2.2-->
-                                    <!--Left Button-->
-                                    <div class="pp-dual-button-1 pp-dual-button pp-button-effect-none">
-                                       <!--- <a href="index.html" class="pp-button " role="button" target="_self" onclick="">
-                                        <span class="pp-button-1-text">Client Galleries</span> -->
-                                      </a>
-                                    </div>
-                                    <!-------------------END----------------------1.2.2-->
-
-
-                                    <!--Button Spacer-->
-                                    <div class="pp-spacer"></div>
-
-
-                                    <!-------------------START----------------------1.2.3--->
-                                    <!--Right Button-->
-                                    <div class="pp-dual-button-2 pp-dual-button pp-button-effect-none">
-                                       <a href="RatesAvailability.html" class="pp-button " role="button" target="_self" onclick="clickedCTA()" title=" ">
-                                        <span class="pp-button-2-text">lorem ipsum</span>
-                                      </a>
-                                    </div>
-                                      <!-------------------END----------------------1.2.3--->
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                              </div>
-                            </div>
-
-                      </div>
-<!------------------------------------------------------End--------------------------------------------------------------------------------------------------------------------1.2-->
+                  <div class="main-wrapper">
+                    <div class="sl-main-container">
                       
- 
-                      <div class="fl-col-group fl-node-5925277de7e10 fl-col-group-nested" data-node="5925277de7e10">
-                            <div class="fl-col fl-node-5925277de804b" data-node="5925277de804b">
-                              <div class="fl-col-content fl-node-content">
+                      <div class="sl-header-wrapper text-background-4x6">
+                        <h3>4X6 PHOTOS</h3>
+                        <h6 style="font-family: 'Railway', sans-serif;">1-4 photos - unlimited prints</h6>
+                        <p>Our 4x6 prints are also available in any variation of 1-4 photos. This larger print size allows more flexibility for customizations.
+                          <br>
+                          <em style="font-size: 10px;">&#9873; $25 up-charge</em>
+                        </p>
+                        <!-- If we need navigation buttons -->
+                        <div class="sl-nav">
 
-                                
-                              </div>
-                            </div>
-                      </div>  
+                         
 
+                          
+                              <svg xmlns="http://www.w3.org/2000/svg" id="prevBtn" data-name="Layer 1" viewBox="0 0 65 65" class="swiper-button-prev-46"> 
+                                <style>
+                                  #prevBtn {
+                                    fill: #04b7ac;
+                                  }
+                                </style>
+                                <path d="M0 32.5A32.5 32.5 0 1 0 32.5 0 32.5 32.5 0 0 0 0 32.5zm3 0A29.5 29.5 0 1 1 32.5 62 29.53 29.53 0 0 1 3 32.5zm32.6-12.9L22.7 32.5l12.9 12.9 2.12-2.12L26.94 32.5l10.78-10.78z"/>
+                              </svg>
+
+                           
+                              <svg xmlns="http://www.w3.org/2000/svg"   data-name="Layer 1" id="nextBtn"  viewBox="0 0 65 65" class="swiper-button-next-46">
+                                <style>
+                                  #nextBtn {
+                                    fill: #04b7ac;
+                                  }
+                                </style>
+                                <path d="M32.5 0A32.5 32.5 0 1 0 65 32.5 32.5 32.5 0 0 0 32.5 0zm0 62A29.5 29.5 0 1 1 62 32.5 29.53 29.53 0 0 1 32.5 62zm-5.22-40.28L38.06 32.5 27.28 43.28l2.12 2.12 12.9-12.9-12.9-12.9z"/>
+                              </svg>
+
+                        </div>
+                        
+                      </div>
+
+                      <!-- Swiper -->
+
+              <div class="swiper newSwiper swiper-4x6">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="Images/Promo/Bouncecastle1.jpeg"></div>
+                <div class="swiper-slide" ><img src="Images/Promo/Bouncecastle2.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/Promo/Bouncecastle3.jpeg"></div>
+                </div>
+        
+                <!-- pagination dots -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- !pagination dots -->
+              </div>
+                      </div>
+                      <!-- END: .sl-wrapper -->
+                  
                     </div>
-                  </div>
-                 </div>
+                 
+               </div>
+               </div>
 
-              </div>
-              </div>
-            </div>
 
+
+
+
+<!-----------------------------------------------------------------------------------------------------TESTIMONIALS----------------------------------------------------------------------------------------------------->
             <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58b554954414a" data-node="58b554954414a">
-              <div class="fl-row-content-wrap">
+              <div class="fl-row-content-wrap" style="padding-top: 0;">
 
                 <div class="uabb-row-separator uabb-top-row-separator" >
                 </div>
@@ -404,6 +400,7 @@ CSS Migrated from BB theme:
                   <div class="fl-col-group fl-node-58b5549544184" data-node="58b5549544184">
                     <div class="fl-col fl-node-58b5549544266 fl-col-small fl-visible-desktop" data-node="58b5549544266">
                       <div class="fl-col-content fl-node-content">
+                        
                       </div>
                     </div>
 
@@ -411,12 +408,15 @@ CSS Migrated from BB theme:
                       <div class="fl-col-content fl-node-content">
                         <div class="fl-module fl-module-pp-heading fl-node-58b55495441f5" data-node="58b55495441f5">
                           <div class="fl-module-content fl-node-content">
+
                             <div class="pp-heading-content">
+
                               <div class="pp-heading  pp-center">
-                                <h2 class="heading-title" title="Photo Booth Near Me">
-                                <span class="title-text pp-primary-title">Lorem Ipsum Lorem Ipsum</span>     
+                                <h2 class="heading-title" title="">
+                                <span class="title-text pp-primary-title">Testimonials</span>     
                                 </h2>
                               </div>
+
                               <div class="pp-sub-heading">
                                 <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                                     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -424,65 +424,61 @@ CSS Migrated from BB theme:
                               </div>
 
                             </div>
+
+
+                <div class = "wrapper">
+
+                    <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum</p>
+                          </blockquote>
+                          <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
+                        </figcaption>
+                      </figure>
+
+
+                      <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum</p>
+                          </blockquote>
+                            <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
+                        </figcaption>
+                      </figure>
+
+
+                      <figure class="snip1533">
+                        <figcaption>
+                          <blockquote>
+                            <p>LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum LoremIpsum</p>
+                          </blockquote>
+                          <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
+                        </figcaption>
+                      </figure>
+
+                    </div>
                           </div>
                         </div>
+                        
                       </div>
                     </div>
-                        <div class="fl-col fl-node-58b55495442a1 fl-col-small fl-visible-desktop" data-node="58b55495442a1">
-                          <div class="fl-col-content fl-node-content">
-                          </div>
-                        </div>
+
                   </div>
 
 <!------------------------------------------------------START------------------------------------------------------------------------------------------------- -------------------1.3-->
 
-                  <div class="fl-col-group fl-node-58b55495442dd" data-node="58b55495442dd">
-
-                
-                    <div class="wrapper">
-
-                      <!--Sparkler background focus-->
-                      <img src="https://images.unsplash.com/photo-1439539698758-ba2680ecadb9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTg5MDk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                      <!--bouque toss-->
-                      <img src="https://images.unsplash.com/photo-1504993945773-3f38e1b6a626?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZy1wYXJ0eXx8fHx8fDE2NTY2MjAwMDE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                     <!--Bucket on arch-
-                      <img src="https://images.unsplash.com/photo-1534429005880-27f51d95d8ff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkxNzU&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg"> -->
-                     <img src="Images/Promo/nonTraditionalSetupSQ.jpg" alt= "Photo Booth Near Me" class="galleryImg">
-                      
 
 
 
-                      <!--Sparkler tunnel-->
-                      <img src="https://images.unsplash.com/photo-1513725673171-537abba17912?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkwNjY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                      <!--Couple Embracing-->
-                      <img src="https://images.unsplash.com/photo-1580824456266-c578703e13da?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkyMDg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                      <!--Lightbulbs-->
-                      <img src="https://images.unsplash.com/photo-1624067078399-be29c52a2b12?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkxMjk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                      
-                      <!--B&W Photo  
-                          <img src="https://images.unsplash.com/photo-1645497265272-5c92210a18b8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cGhvdG9ib290aHx8fHx8fDE2NTY2MTk0OTU&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt="" class="galleryImg">-->
-                      <!--Prop Table-->
-                      <img src="https://images.unsplash.com/photo-1533120921505-7f40f5237ee1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cGFydHl8fHx8fHwxNjYyNTg2MzYx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                      <!--Bridesmaides-->
-                      <img src="https://images.unsplash.com/photo-1562616293-1a11a7816903?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTg5NDY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                     
-                      <!--Couple Isle-->
-                      <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2NTY2MTkwODY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                     
-                      <!--Letters --> 
-                     <img src="https://images.unsplash.com/photo-1509316554658-04f9287cdb78?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8cGhvdG9ib290aHx8fHx8fDE2NTY2MTk1MTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=600" alt= "Photo Booth Near Me" class="galleryImg">
-                    <!-- <img src="Images/Promo/PropsSQ.jpg" alt="" class="galleryImg">--> 
 
-                      
-    
-                    </div>
 
-                    
-                  </div>
 <!------------------------------------------------------End--------------------------------------------------------------------------------------------------------------------1.3-->
 
 
                 </div>
+
+
               </div>
             </div>
            
@@ -492,6 +488,7 @@ CSS Migrated from BB theme:
 
 
 
+<!-----------------------------------------------------------------------------------------------------WHY CHOOSE CASA DE YOYIS----------------------------------------------------------------------------------------------------->
             <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-59250bcd95b8c" data-node="59250bcd95b8c">
               <div class="fl-row-content-wrap">
 
@@ -505,20 +502,20 @@ CSS Migrated from BB theme:
                         <div class="fl-module fl-module-heading fl-node-58e9bed1ecf29" data-node="58e9bed1ecf29">
                           <div class="fl-module-content fl-node-content">
                             <h2 class="heading-title" title="Photo Booth Near Me">
-                            <span class="fl-heading-text">Why Choose Snap Booth Photos?</span>
+                            <span class="fl-heading-text">Why Choose Casa de Yoyis Party rentals?</span>
                             </h2>
                           </div>
                         </div>
                       <div class="fl-module fl-module-rich-text fl-node-58e9bdee5c528" data-node="58e9bdee5c528">
                         <div class="fl-module-content fl-node-content">
                           <div class="fl-rich-text">
-                        <p><img loading="lazy" class="alignleft wp-image-24219 size-medium" src="https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogoDark.png" alt= "Photo Booth Near Me" width="305" height="200" style="margin: 0px 40px" srcset="https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogoDark.png 768w, https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogoDark.png 1024w, https://s3.us-east-2.amazonaws.com/snapboothphotos.com/Images/Logos/sbpLogoDark.png 1234w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+                        <p><img loading="lazy" class="alignleft wp-image-24219 size-medium" src="Images/casadeyoyislogo.jpeg" alt= "Photo Booth Near Me" width="305" height="200" style="margin: 0px 40px" srcset="Images/casadeyoyislogo.jpeg 768w, Images/casadeyoyislogo.jpeg 1024w, Images/casadeyoyislogo.jpeg 1234w" sizes="(max-width: 300px) 100vw, 300px" /> </p>
                       
                         <ul>
-                      <li><b>Lorem Ipsum</b>–  Never worry about set-up or tear down! We ensure early set-up free of charge to make sure everything goes according to plan.</li>
-                      <li><b>Lorem Ipsum</b>– Our graphics and photo strip designs are custom made to your satisfaction and can include anything from company logos to custom hashtags.</li>
-                      <li><b>Lorem Ipsum</b>- We'll make sure each of your guests gets a copy of memories to last a lifetime! Multiple people in one shot? No problem! We'll make sure everyone in the picture gets their own copy!</li>
-                      <li><b>Lorem Ipsum</b>– At Snap Booth Photos, our priority is to not only create memories through photos, but have fun doing it! You want a photo booth that brings excitment to your event, and Snap Booth Photos promises to deliver.</li>
+                      <li><b>Lorem Ipsum</b>–  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
+                      <li><b>Lorem Ipsum</b>– Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
+                      <li><b>Lorem Ipsum</b>- Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
+                      <li><b>Lorem Ipsum</b>– Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
 
                       </ul>
                       </div>
@@ -531,6 +528,76 @@ CSS Migrated from BB theme:
 
               </div>
             </div>
+
+
+
+
+            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58b554954414a" data-node="58b554954414a">
+                <div class="fl-row-content-wrap">
+
+                    
+                    <div class="container-fluid contact" id="contact">
+                        <div class="container modal-content-wrap">
+                          <form id="contact-form">
+                            <h2>Get In Touch</h2>
+
+                            <input type="text" placeholder="Name" id="name-input" name="name" class="full-half">
+                            <input type="email" placeholder="Email" id="email-input" name="email" class="full-half">
+
+                            <div id="frm_field_13604_container" class="form-field  frm_required_field  frm_top_container" style="display: flex;">
+
+                                <input type="text" id="citySTATE" name="citySTATE" value=""  data-reqmsg="Please enter"  placeholder="City & State" style="width: 58%;"/>
+
+
+
+                                <input id="subject-input" 
+                            class="input-field" 
+                            type="date" 
+                            name="subject"
+                            placeholder="Event date" style="width: 40%; margin-left: 2%;">
+                            </div>
+
+
+                            <div id="frm_field_13605_container" class="form-field frm_top_container">
+
+                                <select name="item_meta[13605]" id="field_t1zhai" style="width: 100%;" >
+                                <option value="" selected="selected">How did you find us?</option>
+                                    <option value="Google Search" >Google Search</option>
+                                    <option value="Other Search Engine" >Other Search Engine</option>
+                                    <option value="Facebook/Instagram" >Facebook/Instagram</option>
+                                    <option value="Referred by an event venue/location" >Referred by an event venue/location</option>
+                                    <option value="Referred by someone else" >Referred by someone else</option>
+                                    <option value="Saw you at a wedding I attended" >Saw you at a wedding I attended</option>
+                                    <option value="Saw you at an event I attended" >Saw you at an event I attended</option>
+                                </select>
+                            
+                                
+                            </div>
+                            <textarea placeholder="How can we help?" id="message-input" name="message"></textarea>
+
+                            <br>
+                            <input id="submit-btn" type="submit" value="Request Quote Now" onclick="submitToAPI(event)">
+                          </form>
+
+
+
+
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+            
+           
+
+
+
+
+
+
+
+
+
 
 
             <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-590797f532078" data-node="590797f532078">
@@ -566,7 +633,7 @@ CSS Migrated from BB theme:
                                       <!--FaceBook Icon/Link-->
                                     <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
                                       <link itemprop="url" href=""/>
-                                      <a itemprop="sameAs" href="https://www.facebook.com/snapboothphotos" target="_blank" title="Facebook"
+                                      <a itemprop="sameAs" href="https://www.facebook.com/" target="_blank" title="Facebook"
                                       aria-label="Facebook" role="button" rel="noopener" style="padding-right: 5px;">
                                       <i class="fa fa-facebook"style="font-size: 30px;"></i>
                                       </a>
@@ -577,7 +644,7 @@ CSS Migrated from BB theme:
                                     <!--Instagram Icon/Link-->
                                     <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
                                       <link itemprop="url" href=""/>
-                                      <a itemprop="sameAs" href="https://www.instagram.com/snapboothphotos/" target="_blank" title="Instagram"
+                                      <a itemprop="sameAs" href="https://www.instagram.com/" target="_blank" title="Instagram"
                                       aria-label="Instagram" role="button" rel="noopener" style="padding-right: 5px;">
                                       <i class="fa fa-instagram" style="font-size: 30px;"></i>
                                       </a>
@@ -761,6 +828,10 @@ var quadimages = document.querySelectorAll("#quad figure");
 <script src="Components/navBar.js"></script>
 <script src="Components/footer.js"></script>
 
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src='JS/strip-swiper.js'></script>
 
 </body>
 </html>

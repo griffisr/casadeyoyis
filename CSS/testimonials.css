@@ -76,5 +76,37 @@
 
 }
 
+@media only screen and (min-width: 215px) {
+  .snip1533{
+    max-height: 55vh;
+    min-width: 22vw;
+    height: 40vh;
+  }
+  .snip1533 p{
+      font-size: .5em;
+  }
+
+  .snip1533 figcaption:before{
+    font-size: 10px;
+  }
+
+}
+
+
+@media only screen and (min-width: 375px) {
+  .snip1533{
+    max-height: 55vh;
+    min-width: 22vw;
+    height: 40vh;
+  }
+  .snip1533 p{
+      font-size: .5em;
+  }
+
+  .snip1533 figcaption:before{
+    font-size: 20px;
+  }
+
+}
 
 media query 450- 350 for heading with cta button padding left 50 px
