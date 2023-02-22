@@ -7,6 +7,14 @@ html, body {
 .center-header{
     text-align: center;
 }
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+  }
+
+
 /* ............/navbar/............ *
 
 /* desktop mode............/// */
