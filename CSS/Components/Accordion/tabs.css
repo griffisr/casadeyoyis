@@ -1,4 +1,4 @@
-
+/*e82230*/
 .tab {
   padding-top: 2vh;
   margin-bottom: 20px;
@@ -54,7 +54,7 @@
 }
 .tabs_item h4 {
   font-weight: bold;
-  color: blue;
+  color: #e82230;
   font-size: 20px;
 }
 .tabs_item img {
@@ -68,7 +68,7 @@
 
 .current a {
   color: #fff;
-  background: blue;
+  background: #e82230;
 }
 
 
