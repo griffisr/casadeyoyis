@@ -2,6 +2,9 @@
 <!DOCTYPE html> 
 <html lang="en-US">
 <head>
+  <link rel="icon" 
+  type="image/png" 
+  href="Images/casadeyoyislogo.png">
   <title>Casa de Yoyis </title>
   <meta name="description" content=" ">
 <meta charset="UTF-8" />
@@ -35,7 +38,6 @@
   }
 </style>
 
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 <link rel='stylesheet' type="text/css" href='CSS/tiledPics.css' media='all' />
 <link rel='stylesheet' type="text/css" href='CSS/galleryGrid.css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css' type="text/css" href='CSS/wp-includes/css/dist/block-library/style.min.css' media='all' />
@@ -46,7 +48,8 @@
 <link rel='stylesheet' id='bootstrap-css' type="text/css" href='CSS/wp-content/themes/bb-theme/css/bootstrap.min.css' media='all' />
 <link rel='stylesheet' id='fl-automator-skin-css'  href='CSS/wp-content/uploads/bb-theme/skin-60abfa396f860.css' media='all' />
 <link rel='stylesheet' id='pp-animate-css'  href='CSS/wp-content/plugins/bbpowerpack/assets/css/animate.min.css' media='all' />
-<link rel='stylesheet' id='fl-builder-google-fonts-a0a4696f98041565d38c5d58390b2ea5-css'  href='//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700%7CYanone+Kaffeesatz%3A400&#038;ver=5.7.6' media='all' />
+
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 <link rel='stylesheet' id='foundation-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
 
 <script src='JS/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
@@ -62,9 +65,10 @@
 
   
 
-  <link rel='stylesheet' type="text/css" href='CSS/promo-gallery.css' media='all' />
   <link rel='stylesheet' type="text/css" href='CSS/testimonials.css' media='all' />
   <link rel='stylesheet' type="text/css" href='CSS/contact-form.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/Page Styles/landing.css' media='all' />
+  <link rel='stylesheet' type="text/css" href='CSS/Components/Accordion/tabs.css' media='all' />
 
    <!--Initialize Firebase-->
    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
@@ -173,123 +177,32 @@ CSS Migrated from BB theme:
 
 <!------------------------------Start Content--------------------------------------------------->
 <div class="fl-page">
-<!------------------------------Scrolled/Sticky Nav Bar--------------------------------------------------->
-<header class="fl-page-header fl-page-header-fixed fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile"  role="banner">
-	<div class="fl-page-header-wrap">
-		<div class="fl-page-header-container container">
-			<div class="fl-page-header-row row">
-
-				<div class="col-sm-12 fl-page-fixed-nav-wrap">
-					<div class="fl-page-nav-wrap">
-
-						<nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" role="navigation">
-
-							<div class="fl-page-nav-collapse collapse navbar-collapse" style="width: 100%;">
-								<ul id="menu-maintop" class="nav navbar-nav menu fl-theme-menu" >
-                  
-                  <li id="menu-item-24645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link" title="Rental Guide">Rental Guide</a></li>
-
-                 <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"><a href="testimonials.html" class="nav-link" title="Testimonials">Testimonials</a></li>
-
-                 <li id="menu-item-24402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item">     
 
 
-                  <a href=""><img id="sticky-logo" loading="false" data-no-lazy="1" class="fl-logo-img" itemscope itemtype="https://schema.org/ImageObject" src="Images/casadeyoyislogo.png"  data-retina="Images/casadeyoyislogo.png" title="" alt= "casadeyoyis" /></a>
-
-                 </li>
-
-                 <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title="FAQs">FAQs</a></li>
-
-                 <li id="menu-item-24403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title="Request Quote">Request Quote</a></li>
-
-                </ul>							
-              </div>
-						</nav>
-
-					</div>
-				</div>
 
 
-			</div>
-		</div>
-	</div>
-</header><!-- .fl-page-header-fixed -->
-
-<!-----------------------------Header banner----------------------------------->
-
-<!--
-          <div class="fl-page-bar">
-	<div class="fl-page-bar-container container">
-		<div class="fl-page-bar-row row">
-			<div class="col-sm-6 col-md-6 text-left clearfix"><div class="fl-page-bar-text fl-page-bar-text-1">Capturing Michigan memories since 2022</div></div>	
-      <div class="col-sm-6 col-md-6 text-right clearfix">
-        <div class="fl-page-bar-text fl-page-bar-text-2">
-          <div style="font-size:120%">
-            <strong>Call or TXT: <a href="tel:1-734-236-1600">(xxx) xxx-xxxx</a></strong>
+    
+  <!--------------NAV BAR--------------------->
+  <div class="nav-spacer">
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
           </div>
-        </div>
-      </div>		
-    </div>
-	</div>
-</div> -->
+          <ul class="menu-items">
+              <li><a href="#showcase">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#food-menu">Rentals</a></li>
+              <li><a href="#food">Contact Us</a></li>
+          </ul>
+          <img src="Images/casadeyoyislogo.png" alt="peppers" class="nav-logo logo">
+      </div>
+  </nav>
 
-
-
- <!------------------------------Nav Bar--------------------------------------------------->
-<header class="fl-page-header fl-page-header-primary fl-page-nav-right fl-page-nav-toggle-icon fl-page-nav-toggle-visible-mobile" itemscope="itemscope" itemtype="https://schema.org/WPHeader"  role="banner">
-	<div class="fl-page-header-wrap" id="nav-bar">
-		<div class="fl-page-header-container container" style="padding-top: 0%;">
-			<div class="fl-page-header-row row">
-
-        <!--Small Logo for mobile nav menu-->
-        <div id="nav-logo-small" class="fl-page-header-logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
-          <a href="" itemprop="url"><img src="Images/casadeyoyislogo.png" title=" "
-              alt="Photo Booth Near Me" /></a>
-        </div>
-
-
-
-
-				<div class="col-sm-12 col-md-8 fl-page-nav-col" id="nav-bar-toggle-list">
-					<div class="fl-page-nav-wrap">
-
-						<nav class="fl-page-nav fl-nav navbar navbar-default navbar-expand-md" aria-label="Header Menu" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" id="nav-bar">
-
-							<button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target=".fl-page-nav-collapse">
-                <!--CHANGE THE HAMBURGER MENU ICON-->
-								<span><span class="sr-only" style="position: relative;"><img src="Images/menu.png" style="height: 75px; width: auto;" alt= "Photo Booth Near Me"></img></span>
-							</button>
-
-							<div class="fl-page-nav-collapse collapse navbar-collapse" id="nav-bar-toggle">
-								<ul id="menu-maintop-1" class="nav navbar-nav navbar-right menu fl-theme-menu">
-
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="photo-booth-rental-guide.html" class="nav-link" title ="Rental Guide">Rental Guide</a></li>
-
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item"> <a href="testimonials.html" class="nav-link" title="Testimonials">Testimonials</a></li>
-
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24402 nav-item" id="nav-logo-center">
-                                <a href="" itemprop="url" class="nav-link"><img  src="Images/casadeyoyislogo.png" title=" " alt= "" style="width: 200px;"/></a>	
-                          </li>
-
-                          <li id="menu-item-24404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24645 nav-item"><a href="FAQs.html" class="nav-link" title="FAQs">FAQs</a></li>
-
-                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24403 nav-item"><a href="RatesAvailability.html" class="nav-link" title="Request Quote">Request Quote</a></li>
-
-                          </ul>							
-              </div>
-
-						</nav>
-
-					</div>
-				</div>
-
-
-
-
-			</div>
-		</div>
-	</div>
-</header><!-- .fl-page-header -->
+  </div>
 
 
  <!---------------------------------------------------------START MAIN--------------------------------------------------------------------------------------------------------------------01-->
@@ -325,39 +238,36 @@ CSS Migrated from BB theme:
               <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                   
-                  <div class="swiper-slide" style="background-image:url(Images/Promo/Bouncecastle1.jpeg)">
+                  <div class="swiper-slide" id="slide1">
                     <div class="teaserText teaserTextDark">
-                      <h1>Headline</h1>
-                      <h5>Suheadline</h5>
-                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                      <h1>Casa de Yoyis Party Rentals</h1>
+                      <h5>Take Your Party to the Next Level</h5>
+                      <p>Elevate your party game with Casa de Yoyis! From our bounce houses to our tables, chairs, and tents, we have everything you need to create an unforgettable event that your guests will never forget</p>
                     </div>
                   </div>
-                  <div class="swiper-slide" style="background-image:url(Images/Promo/Bouncecastle2.jpeg)">
-                    <div class="teaserText teaserTextDark">
-                      <h1>Headline</h1>
-                      <h5>Suheadline</h5>
-                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <div class="swiper-slide" id="slide2">
+                    <div class="teaserText teaserTextDark ">
+                      <h1>The Perfect Tent for Every Occasion - Casa de Yoyis Has You Covered!</h1>
+                      <p>Casa de Yoyis' tent rentals are designed to be both functional and beautiful! Our clean and well-maintained tents will enhance the look and feel of your event, while providing a comfortable and inviting atmosphere for your guests.</p>
                     </div>
                   </div>
-                  <div class="swiper-slide" style="background-image:url(Images/Promo/Bouncecastle3.jpeg)">
+                  <div class="swiper-slide" id="slide3">
                     <div class="teaserText teaserTextDark">
-                      <h1>Headline</h1>
-                      <h5>Suheadline</h5>
-                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                      <h1>Casa de Yoyis Bounce House Rentals</h1>
+                      <h5>Fun for Everyone, No Matter Your Age!</h5>
+                      <p>Transform your party with Casa de Yoyis' bounce house rentals! Our diverse selection of bounce houses offers something for everyone, from toddlers to adults.</p>
                     </div>
                   </div>
-                  <div class="swiper-slide" style="background-image:url(Images/Promo/Bouncecastle1.jpeg)">
+                  <div class="swiper-slide" id="slide4">
                     <div class="teaserText teaserTextDark">
-                      <h1>Headline</h1>
-                      <h5>Suheadline</h5>
-                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                      <h1>Party Like A Pro</h1>
+                      <p>At Casa de Yoyis, we know how to throw a party! Our extensive inventory of tables, chairs, tents, and more will help you create the event of your dreams. Our high-quality party rentals are designed to make your event unforgettable, with options to suit any style and budget.</p>
                     </div>
                   </div>
-                  <div class="swiper-slide" style="background-image:url(Images/Promo/Bouncecastle3.jpeg)">
+                  <div class="swiper-slide" id="slide5">
                     <div class="teaserText teaserTextDark">
-                      <h1>Headline</h1>
-                      <h5>Suheadline</h5>
-                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                      <h1>Rain or Shine, Casa de Yoyis' Tent Rentals Keep the Party Going!</h1>
+                      <p>Create the perfect outdoor oasis with Casa de Yoyis' tent rentals! Our high-quality and affordable tents are designed to protect you and your guests from the elements while still enjoying the great outdoors.</p>
                     </div>
                   </div>
                   </div>
@@ -369,98 +279,151 @@ CSS Migrated from BB theme:
               </div>
                  
 
+<!----------------------------------------------------------------------------------------------------Services Section----------------------------------------------------------------------------------------------------->
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-59250bcd95b8c" data-node="59250bcd95b8c">
+  <div class="fl-row-content-wrap">
+
+    <div class="uabb-row-separator uabb-top-row-separator" >
+    </div>
+
+    <h2 class="heading-title center-header">
+      <span class="fl-heading-text">Explore Our Services and Equipment</span>
+      </h2>
+
+    <div class="tab">
+
+      <ul class="tabs">
+        <li><a href="#">Tab01</a></li>
+        <li><a href="#">Tab02</a></li>
+        <li><a href="#">Tab03</a></li>
+        <li><a href="#">Tab04</a></li>
+        <li><a href="#">Tab05</a></li>
+      </ul> <!-- / tabs -->
+    
+      <div class="tab_content">
+    
+        <div class="tabs_item">
+          <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png">
+          <h4>Tab 01 Neque ipsum dolor.</h4>
+          <p>Consectetur adipisicing elit. Neque, repellat facilis totam ab eos distinctio sint atque maiores! Dignissimos, molestiae, rem accusantium iure vitae voluptatum voluptas repudiandae deserunt dolore quis! Quisquam mollitia eius sed.</p>
+        </div> <!-- / tabs_item -->
+    
+        <div class="tabs_item">
+          <img src="https://cdn.dribbble.com/users/545884/screenshots/3576036/liberosis_--_10.png">
+          <h4>Tab02 Maiores, suscipit</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+        </div> <!-- / tabs_item -->
+    
+        <div class="tabs_item">
+          <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+          <h4>Tab03</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+        </div> <!-- / tabs_item -->
+
+        <div class="tabs_item">
+          <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+          <h4>Tab04</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+        </div> <!-- / tabs_item -->
+
+        <div class="tabs_item">
+          <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+          <h4>Tab05</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+        </div> <!-- / tabs_item -->
+        
+      </div> <!-- / tab_content -->
+    </div> <!-- / tab -->
+
+  </div>
+</div>
 
 
 <!-----------------------------------------------------------------------------------------------------TESTIMONIALS----------------------------------------------------------------------------------------------------->
-            <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58b554954414a" data-node="58b554954414a">
-              <div class="fl-row-content-wrap" style="padding-top: 0;">
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58b554954414a" data-node="58b554954414a">
+  <div class="fl-row-content-wrap" style="padding-top: 0;">
 
-                <div class="uabb-row-separator uabb-top-row-separator" >
-                </div>
+    <div class="uabb-row-separator uabb-top-row-separator" >
+    </div>
 
-                <div class="fl-row-content fl-row-fixed-width fl-node-content">     
-
-
-                  <div class="fl-col-group fl-node-58b5549544184" data-node="58b5549544184">
-                    <div class="fl-col fl-node-58b5549544266 fl-col-small fl-visible-desktop" data-node="58b5549544266">
-                      <div class="fl-col-content fl-node-content">
-                        
-                      </div>
-                    </div>
-
-                    <div class="fl-col fl-node-58b55495441bd" data-node="58b55495441bd">
-                      <div class="fl-col-content fl-node-content">
-                        <div class="fl-module fl-module-pp-heading fl-node-58b55495441f5" data-node="58b55495441f5">
-                          <div class="fl-module-content fl-node-content">
-
-                            <div class="pp-heading-content">
-
-                              <div class="pp-heading  pp-center">
-                                <h2 class="heading-title" title="">
-                                <span class="title-text pp-primary-title">Testimonials</span>     
-                                </h2>
-                              </div>
-
-                              <div class="pp-sub-heading">
-                                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                </p>	
-                              </div>
-
-                            </div>
+    <div class="fl-row-content fl-row-fixed-width fl-node-content">     
 
 
-                <div class = "wrapper">
+      <div class="fl-col-group fl-node-58b5549544184" data-node="58b5549544184">
+        <div class="fl-col fl-node-58b5549544266 fl-col-small fl-visible-desktop" data-node="58b5549544266">
+          <div class="fl-col-content fl-node-content">
+            
+          </div>
+        </div>
 
-                    <figure class="snip1533">
-                        <figcaption>
-                          <blockquote>
-                            <p>LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum</p>
-                          </blockquote>
-                          <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
-                        </figcaption>
-                      </figure>
+        <div class="fl-col fl-node-58b55495441bd" data-node="58b55495441bd">
+          <div class="fl-col-content fl-node-content">
+            <div class="fl-module fl-module-pp-heading fl-node-58b55495441f5" data-node="58b55495441f5">
+              <div class="fl-module-content fl-node-content">
 
+                <div class="pp-heading-content">
 
-                      <figure class="snip1533">
-                        <figcaption>
-                          <blockquote>
-                            <p>Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum</p>
-                          </blockquote>
-                            <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
-                        </figcaption>
-                      </figure>
-
-
-                      <figure class="snip1533">
-                        <figcaption>
-                          <blockquote>
-                            <p>LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum LoremIpsum</p>
-                          </blockquote>
-                          <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
-                        </figcaption>
-                      </figure>
-
-                    </div>
-
-
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
+                  <div class="pp-heading  pp-center">
+                    <h2 class="heading-title" title="">
+                    <span class="title-text pp-primary-title">Testimonials</span>     
+                    </h2>
                   </div>
+
+                  <div class="pp-sub-heading">
+                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    </p>	
+                  </div>
+
                 </div>
+
+
+    <div class = "wrapper">
+
+        <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum</p>
+              </blockquote>
+              <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
+            </figcaption>
+          </figure>
+
+
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum</p>
+              </blockquote>
+                <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
+            </figcaption>
+          </figure>
+
+
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>LoremIpsum Lorem Ipsum Lorem Ipsum LoremIpsum Lorem Ipsum LoremIpsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum LoremIpsum</p>
+              </blockquote>
+              <h3 title="Photo Booth Near Me">Lorem Ipsum.</h3>
+            </figcaption>
+          </figure>
+
+        </div>
+
+
               </div>
             </div>
-           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-
-
-
-
-<!-----------------------------------------------------------------------------------------------------WHY CHOOSE CASA DE YOYIS----------------------------------------------------------------------------------------------------->
+              <!-----------------------------------------------------------------------------------------------------WHY CHOOSE CASA DE YOYIS----------------------------------------------------------------------------------------------------->
             <div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-59250bcd95b8c" data-node="59250bcd95b8c">
               <div class="fl-row-content-wrap">
 
@@ -472,23 +435,23 @@ CSS Migrated from BB theme:
                     <div class="fl-col fl-node-58b5549544772" data-node="58b5549544772">
                       <div class="fl-col-content fl-node-content">
                         <div class="fl-module fl-module-heading fl-node-58e9bed1ecf29" data-node="58e9bed1ecf29">
-                          <div class="fl-module-content fl-node-content">
-                            <h2 class="heading-title" title="Photo Booth Near Me">
+                          <div class="fl-module-content fl-node-content why-logo-spacer">
+                            <h2 class="heading-title center-header">
                             <span class="fl-heading-text">Why Choose Casa de Yoyis Party rentals?</span>
                             </h2>
                           </div>
                         </div>
                       <div class="fl-module fl-module-rich-text fl-node-58e9bdee5c528" data-node="58e9bdee5c528">
-                        <div class="fl-module-content fl-node-content">
+                        <div class="fl-module-content fl-node-content why-list">
                           <div class="fl-rich-text">
-                        <p><img loading="lazy" class="alignleft wp-image-24219 size-medium" src="Images/casadeyoyislogo.jpeg" alt= "Photo Booth Near Me" width="305" height="200" style="margin: 0px 40px" srcset="Images/casadeyoyislogo.jpeg 768w, Images/casadeyoyislogo.jpeg 1024w, Images/casadeyoyislogo.jpeg 1234w" sizes="(max-width: 300px) 100vw, 300px" /> </p>
+                        <p><img id="why-logo" loading="lazy" class="alignleft wp-image-24219 size-medium" src="Images/casadeyoyislogo.jpeg" alt= "Photo Booth Near Me" width="305" height="200" srcset="Images/casadeyoyislogo.jpeg 768w, Images/casadeyoyislogo.jpeg 1024w, Images/casadeyoyislogo.jpeg 1234w" sizes="(max-width: 300px) 100vw, 300px" /> </p>
                       
                         <ul>
-                      <li><b>Lorem Ipsum</b>–  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
-                      <li><b>Lorem Ipsum</b>– Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
-                      <li><b>Lorem Ipsum</b>- Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
-                      <li><b>Lorem Ipsum</b>– Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</li>
-
+                      <li><b>Expertise and Experience</b>–  With over [X number of] years of experience in the party rental industry, Casa de Yoyis has the expertise and knowledge to help you plan and execute the perfect event. Our team of experienced professionals will work with you every step of the way to ensure your event is a success.</li>
+                      <li><b>Wide Selection of High-Quality Rentals</b>– Casa de Yoyis offers a wide selection of high-quality rentals to fit any occasion or style. From bounce houses and water slides to tents, tables, and chairs, we have everything you need to make your event unforgettable. We only use top-of-the-line equipment and materials to ensure your event is both safe and stylish.</li>
+                      <li><b>Hassle-Free Rentals</b>– Renting equipment for your event can be a stressful experience, but it doesn't have to be. Casa de Yoyis offers hassle-free rentals, including flexible delivery and pickup options, so you can focus on enjoying your event rather than worrying about the details.</li>
+                      <li><b>Dependable Service</b>- You can always count on Casa de Yoyis to deliver dependable service and equipment for your event. Our team is committed to providing reliable and punctual delivery and setup, so you can rest assured that your event will go off without a hitch.</li>
+                      <li><b>Personalized Service</b>– At Casa de Yoyis, we understand that every event is unique. That's why we offer personalized service to ensure that your event reflects your individual style and preferences. We will work with you to create a customized rental package that fits your specific needs and budget.</li>
                       </ul>
                       </div>
                         </div>
@@ -502,8 +465,18 @@ CSS Migrated from BB theme:
             </div>
 
 
+           
 
 
+
+
+
+
+
+
+
+
+<!-----------------------------------------------------------------------------------------------------Contact Form----------------------------------------------------------------------------------------------------->
             <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-58b554954414a" data-node="58b554954414a">
                 <div class="fl-row-content-wrap">
 
@@ -711,18 +684,17 @@ CSS Migrated from BB theme:
                                       <div class="subShoe">
                                         <p>
                                           <span style="font-size: 14px">
-                                            <a href="Cities/photo-booth-ann-arbor.html" title=" ">Ann Arbor</a> |
-                                            <a href="Cities/photo-booth-milan-mi.html" title=" ">Milan</a> |
-                                            <a href="Cities/photo-booth-ypsilanti-mi.html" title=" ">Ypsilanti</a> |
-                                            <a href="Cities/photo-booth-saline-mi.html" title=" ">Saline</a> |
-                                            <a href="Cities/photo-booth-tecumseh-mi.html" title=" ">Tecumseh</a> |
-                                            <a href="Cities/photo-booth-adrian-mi.html" title=" ">Adrian</a> |
-                                            <a href="Cities/photo-booth-novi-mi.html" title=" ">Novi</a> |                        
-                                            <a href="Cities/photo-booth-chelsea-mi.html" title=" ">Chelsea</a> |
-                                            <a href="Cities/photo-booth-toledo-oh.html" title=" ">Toledo</a> |
-                                            <a href="Cities/photo-booth-bryan-oh.html" title=" ">Bryan</a> |
-                                            <a href="Cities/photo-booth-angola-in.html" title=" ">Angola</a> |
-                                            <a href="Cities/photo-booth-fremont-in.html" title=" ">Fremont</a> 
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> |
+                                            <a href="" title=" ">Ann Arbor</a> 
+                                           
                                           </span>
                                         </p>
                                       </div>
@@ -804,6 +776,7 @@ var quadimages = document.querySelectorAll("#quad figure");
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src='JS/promo-gallery.js'></script>
+<script src='JS/Components/tabs.js'></script>
 
 </body>
 </html>

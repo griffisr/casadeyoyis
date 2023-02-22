@@ -6,7 +6,7 @@ var galleryTop = new Swiper('.gallery-top', {
     },
 
     autoplay: {
-      delay: 6500,
+      delay: 650000000,
       disableOnInteraction: false
     },
     loop: true
