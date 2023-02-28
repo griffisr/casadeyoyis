@@ -81,6 +81,194 @@
   margin-bottom: 1vh;
 }
 
+/* ............/Promo Slider Gallery/............ */
+
+   .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery-top {
+    height: 100vh;
+    width: 100%;
+
+  }
+    
+  #slide1 {background-image:url(../../Images/Promo/Bouncecastle1.jpeg)}
+  #slide2 {background-image:url(../../Images/Promo/tent1.jpeg)}
+  #slide3 {background-image:url(../../Images/Promo/Bouncecastle3.jpeg)}
+  #slide4 {background-image:url(../../Images/Promo/Bouncecastle2.jpeg)}
+  #slide5 {background-image:url(../../Images/Promo/tent2.jpeg)}
+  
+  
+  .teaserText {
+    margin-left: 2.5%;
+    margin-top: 7.5%;
+    max-width: 60%;
+    position:relative;
+    background-color: rgba(255, 255, 255, 0.749);
+    padding: .5em 2em 2em 2em;
+  }
+
+  .teaserText h1{
+    font-family: 'Patua One', bold;
+    font-size: 2.5rem;
+  }
+  .teaserText h5{
+    font-size: 1.25rem;
+  }
+
+  .teaserTextBright {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+  }
+  .teaserTextDark {
+    color: #000;
+    text-shadow: 1px 1px #fff;
+  }
+  .teaserTextColored {
+    color: orange;
+    text-shadow: 1px 1px #444;
+  }
+  
+  /*
+  .swiper-slide-active .teaserText {
+    animation:mymove 1s ease-out forward;
+    animation-iteration-count:1;
+  
+   Safari and Chrome 
+  -webkit-animation:mymove 1s;
+  -webkit-animation-iteration-count:1;
+  }
+  
+  @keyframes mymove
+  { from {top:0px; opacity: 0;}
+  to {top:100px; opacity: 1}
+  }
+  
+  @-webkit-keyframes mymove  Safari and Chrome 
+  {
+  from {top:0px; opacity: 0;}
+  to {top:100px; opacity: 1;}
+  }
+  */
+
+
+
+  /*  ABOUT SECTION */
+  #about {
+      padding: 2vh 0;
+    }
+    
+    .about-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    
+    #about .small {
+      font-size: 1.2rem;
+      color: #666;
+      font-weight: 600;
+    }
+    
+    .about-img {
+      flex: 1 1 400px;
+      padding: 30px;
+      transform: translateX(150%);
+      animation: about-img-animation 1s ease-in-out forwards;
+      border-radius: 50%;
+    }
+
+    .logo-img {
+      flex: 1 1 400px;
+      transform: translateX(150%);
+      animation: about-img-animation 1s ease-in-out forwards;
+      border-radius: 50%;
+    }
+  
+    @keyframes about-img-animation {
+      100% {
+        transform: translate(0);
+      }
+    }
+    
+    .about-text {
+      flex: 1 1 400px;
+      padding: 30px;
+      margin: auto;
+      transform: translate(-150%);
+      animation: about-text-animation 1s ease-in-out forwards;
+    }
+    
+    @keyframes about-text-animation {
+      100% {
+        transform: translate(0);
+      }
+    }
+    .about-img{
+      max-height: 80vh;
+      width: 98%;
+      display: flex;
+      justify-self: center;
+      border-radius: 100%;
+    }
+    
+    .about-img img {
+      height: auto;
+      width: auto;
+      margin: auto;
+      border-radius: 50%;
+      max-width: 500px;
+    }
+
+    .logo-img{
+      max-height: 70vh;
+      width: 98%;
+      display: flex;
+      justify-self: center;
+      border-radius: 100%;
+    }
+    
+    .logo-img img {
+      height: auto;
+      width: auto;
+      max-height: 320px;
+      max-width: 320px;
+      margin: auto;
+      border-radius: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,7 +374,98 @@
       font-weight: 500;
     }
   
-   
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 2rem;
+    }
+    .nav-peppers-logo{
+      margin-bottom: 0px!important;
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+    }
+  
+    .peppers-logo{
+      width: 30vw!important;
+    }
+  
+    .about-wrapper {
+      flex-direction: column;
+    }
+    .why-wrapper{
+      flex-direction: column-reverse;
+    }
+    .about-img{
+      padding: 0!important;
+    }
+
+    #about p{
+      font-size: 1.4rem;
+
+    }
+
+    .swiper-nav-btn{
+      padding: 2.5em 1em 2.5em 1em;
+    }
+  
+    .why-logo-spacer{
+        margin: 0;
+    }
+
+    .why-list{
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+  
+    #why-logo{
+        margin: 0px 8vw 10px 8vw!important;
+    }
+  
+  .panel{
+      flex-direction: column;
+  }
+  .half-container{
+      width: 100%;
+      height: 10%;
+  }
+  .fb-view{
+      width: 100%;
+  }
+
+  .about-img {
+    max-height: 55vh;
+
+  }
+
+  .about-text{
+    flex: 1 1 ;
+  }
+  .about-img img{
+    margin-top: 0;
+    max-width: 300px;
+  }
+  .logo-img img{
+    max-width: 500px;
+    max-height: 500px;
+  }
+  #why-bullets{
+    padding-inline-start: 0;
+  }
   }
   
   
@@ -207,7 +486,27 @@
         font-size: 1.6rem;
     }
   
+    .testimonial-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
    
+  
+    .form-container {
+      width: 90%;
+    }
+  
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-img {
+      width: 90%;
+      margin: 3rem auto;
+    }
+  
     .logo {
       position: absolute;
       top: 06px;
@@ -215,7 +514,10 @@
       font-size: 3rem;
     }
   
-    
+    .peppers-logo{
+      width: 40vw!important;
+    }
+  
     .navbar .menu-items li {
       margin-bottom: 2.5rem;
       font-size: 1.8rem;
@@ -228,6 +530,21 @@
     }
   }
   
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .img-container h3 {
+      font-size: 1.5rem;
+    }
+  
+    .img-container .btn {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media only screen and (orientation: landscape) and (max-height: 500px) {
+    .showcase-area {
+
+    }
+  }
   
   
   @media only screen and (max-height: 800px) {
@@ -264,7 +581,23 @@
   
   }
 
+  @media only screen and (max-width: 360px) {
 
+    .logo-img img{
+      max-width: 250px;
+      max-height: 250px;
+    }
+
+    .about-img img{
+      max-width: 250px;
+      margin-top: 0;
+
+    }
+    .about-img {
+      max-height: 55vh;
+
+    }
+  }
   
   
 
