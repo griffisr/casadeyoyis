@@ -294,7 +294,7 @@
 @media only screen and (max-width: 768px) {
     .navbar {
       opacity: 0.95;
-      max-width: 100vw;
+      max-width: 100%;
     }
   
     .navbar-container input[type="checkbox"],
