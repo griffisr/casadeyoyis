@@ -96,7 +96,7 @@
   .gallery-top {
     height: 100vh;
     width: 100%;
-
+    /* overflow: hidden; */
   }
     
   #slide1 {background-image:url(../../Images/Promo/Bouncecastle1.jpeg)}
