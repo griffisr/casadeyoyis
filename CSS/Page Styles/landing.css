@@ -167,11 +167,13 @@
   /*  ABOUT SECTION */
   #about {
       padding: 2vh 0;
+      background-color: red;
     }
     
     .about-wrapper {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: row;
     }
 
     
