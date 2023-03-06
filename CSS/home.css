@@ -203,6 +203,7 @@ body {
   }
   .about-img{
     max-height: 80vh;
+    max-width: 95vw!important;
     display: flex;
     justify-self: center;
     border-radius: 100%;
