@@ -219,8 +219,7 @@
     }
     
     .about-img img {
-      height: auto;
-      width: auto;
+
       margin: auto;
       border-radius: 50%;
       max-width: 500px;
@@ -234,8 +233,7 @@
     }
     
     .logo-img img {
-      height: auto;
-      width: auto;
+
       max-height: 320px;
       max-width: 320px;
       margin: auto;
